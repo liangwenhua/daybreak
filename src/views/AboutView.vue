@@ -61,8 +61,6 @@
   <div class="explore d-flex justify-content-center">
     <a href="#"></a>
       <img src="@/assets/images/daybreak-white.svg" alt="">
-  
-    
   </div>
 
 </template>
