@@ -14,8 +14,12 @@
 </script>
 
 <style lang='scss'>
+$SansTC: 'Noto Sans TC', sans-serif;
+$Serif: serif,'Noto Serif TC';
+
 
 nav{
+  font-family: $Serif;
   letter-spacing: 3px;
   a{
     text-decoration: none;
