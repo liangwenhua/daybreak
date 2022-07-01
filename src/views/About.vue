@@ -32,14 +32,14 @@
       </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-6 p-5">
           <h3>RECONNECT <br>WITH NATURE</h3>
       </div>
       <div class="col-6 p-5 ">
         <img class="reconnect-img" src="@/assets/images/Room5.jpg" alt="">
       </div>
-    </div>
+    </div> -->
 
     
     
