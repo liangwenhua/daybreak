@@ -1,15 +1,15 @@
 <template>
-  <div class="rooms">
+  <div class="rooms text-center">
     <img src="@/assets/images/daybreak-black.svg" alt="">
-    <p class="introduce">最貼近九份山城的湛藍大海，以混凝土牆與冷色調特殊塗料，架構出 日式侘寂樣態的建築風貌<br>
+    <p class="introduce ">最貼近九份山城的湛藍大海，以混凝土牆與冷色調特殊塗料，架構出 日式侘寂樣態的建築風貌<br>
 低飽和度的色彩減輕視覺壓力，凝造溫暖 紓壓的空間氛圍 ; 方正與規律的空間配置，適合崇尚減法哲學的旅人<br>
 一望無際的落日景緻，也為此趟旅行迎來獨有的魔幻時刻</p>
 
     <div class="row py-5">
       <div class="col-6 room-type p-5">
         <div class="d-flex justify-content-center">
-          <div class="room-photo"></div>
-          <div class="room-photo"></div>
+          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
+          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
         </div>
         <div class="title">雲湧</div>
           <p>視野漫無邊際的雙人房，欣賞山城最美的視角</p>
@@ -64,6 +64,10 @@
   </div>
 
 </template>
+
+<script>
+</script>
+
 <style scoped lang="scss">
 $SansTC: 'Noto Sans TC', sans-serif;
 $Serif: serif,'Noto Serif TC';
@@ -103,9 +107,7 @@ $Serif: serif,'Noto Serif TC';
       margin: 15px;
       &:hover{
         opacity: 0.9;
-
       }
-
     }
   }
   .explore{
@@ -116,7 +118,6 @@ $Serif: serif,'Noto Serif TC';
       width: 400px;
     }
   }
-
-
 </style>
   
+

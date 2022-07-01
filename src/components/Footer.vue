@@ -22,13 +22,13 @@
       <div class="col-5 text-start">
         <ul class="list-unstyled ">
           <li>
-            <router-link to="/about">曉宅山</router-link>
+            <router-link to="/room-daybreak">曉宅山</router-link>
           </li>
           <li>
-            <router-link to="/about">暮宅山</router-link>
+            <router-link to="/room-latebreak">暮宅山</router-link>
           </li>
           <li>
-            <router-link to="/about">線上訂房</router-link>
+            <router-link to="/booking-rule">線上訂房</router-link>
           </li>
           <li>
             櫃檯服務時間 07:00-22:00</li>
@@ -45,7 +45,7 @@
             <router-link to="/about">關於曉宅山</router-link>
           </li>
           <li>
-            <router-link to="/about">最新消息</router-link>
+            <router-link to="/room-latebreak/2201">最新消息</router-link>
           </li>
           <li>
             <router-link to="/about">聯繫我們</router-link>

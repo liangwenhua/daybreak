@@ -1,10 +1,9 @@
 <template>
   <!-- top-content -->
-  <component-nav />
   <section>
     <div class="top-content d-flex flex-column justify-content-center ">
-      <div class="animate__animated animate__fadeInDown animate__slower ">
-        <img src="../assets/images/large-logo.svg" alt="">
+      <div class="text-center animate__animated animate__fadeInDown animate__slower ">
+        <img src="@/assets/images/large-logo.svg" alt="">
       </div>
     </div>
   </section>
@@ -12,7 +11,7 @@
   <!-- intro -->
 <section class="intro text-white">
   <div class="d-flex flex-row row align-items-end ">
-    <p class="daybreak col-6 pb-5">DAYBREAK</p>
+    <p class="daybreak col-6 pb-5 text-center">DAYBREAK</p>
     <div class="col-6 text-start">
       <div class="h1 title">曉 宅 山</div>
         <p class="pt-4">
@@ -33,7 +32,7 @@
         </p>
       </div>
   </div>
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center text-center">
     <div class="about col-6 ">
       <p>About DAYBREAK</p>
       <p class="nature pb-5">RECONNECT<br>WITH NATURE.</p>
@@ -50,13 +49,13 @@
 
 
 <!-- NEWS -->
-<section class="news">
+<section class="news text-center">
   <div class="container">
     <div class="news-title">最新消息 News
     </div>
     <div class="news-group">
       <div class="news-list row d-flex align-items-center px-3 pb-5">
-        <img class="cover col-4" src="../assets/images/Room3.jpg" alt="">
+        <img class="cover col-4" src="@/assets/images/Room3.jpg" alt="">
         <div class="text col-8 text-start ">
           <div class="fs-4 pb-2">
             四月訂房日期開放公告
@@ -69,7 +68,7 @@
       </div>
 
       <div class="news-list row d-flex align-items-center px-3 pb-5">
-        <img class="cover col-4" src="../assets/images/Room4.jpg" alt="">
+        <img class="cover col-4" src="@/assets/images/Room4.jpg" alt="">
         <div class="text col-8 text-start ">
           <div class="fs-4 pb-2">
             四月訂房日期開放公告
@@ -102,8 +101,6 @@ export default {
 }
 </script>
 
-
-
 <style scoped lang="scss">
   
 $SansTC: 'Noto Sans TC', sans-serif;
@@ -111,7 +108,7 @@ $Serif: serif,'Noto Serif TC';
 .top-content{
   width: 100vw;
   height: 100vh;
-  background: center center url("../assets/images/bg-index.jpg");
+  background: center center url("@/assets/images/bg-index.jpg");
 }
 // intro 
 .intro{
@@ -151,9 +148,9 @@ $Serif: serif,'Noto Serif TC';
 //news
 .news{
   font-family: $Serif;
-  // background: gray url("../assets/images/Room3.jpg") no-repeat right / 50vw 100%;
+  // background: gray url("@/assets/images/Room3.jpg") no-repeat right / 50vw 100%;
   
-  background-image: url('../assets/images/Room3.jpg');
+  background-image: url('@/assets/images/Room3.jpg');
   Background-repeat: no-repeat;
   background-position: center center;
   background-size: 50%;
