@@ -1,5 +1,6 @@
 
 <template >
+
   <component-nav />
   <router-view></router-view>
   <component-footer />

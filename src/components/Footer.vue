@@ -35,7 +35,7 @@
           <li>
             聯絡電話 +886(03)000-0000</li>
           <li>
-            <router-link to="/about">service@daybreak.com</router-link>
+            <a href="#">service@daybreak.com</a>
           </li>
         </ul>
       </div>
@@ -45,16 +45,16 @@
             <router-link to="/about">關於曉宅山</router-link>
           </li>
           <li>
-            <router-link to="/room-latebreak/2201">最新消息</router-link>
+            <router-link to="/news">最新消息</router-link>
           </li>
           <li>
-            <router-link to="/about">聯繫我們</router-link>
+            <router-link to="/contact">聯繫我們</router-link>
           </li>
           <li>
-            <router-link to="/about">訂房須知</router-link>
+            <router-link to="/booking-rule">訂房須知</router-link>
           </li>
           <li>
-            <router-link to="/about">隱私權政策</router-link>
+            <router-link to="/privacy">隱私權政策</router-link>
           </li>
         </ul>
       </div>

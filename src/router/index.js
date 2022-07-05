@@ -35,16 +35,16 @@ const routes = [
   },
   {
     path: '/room-daybreak/1301',
-    name: '1301',
+    name: 'DayBreak1301',
     component: function () {
-      return import('../views/1301.vue')
+      return import('../views/DayBreak1301.vue')
     }
   },
   {
     path: '/room-latebreak/2201',
-    name: '2201',
+    name: 'LateBreak2201',
     component: function () {
-      return import('../views/2201.vue')
+      return import('../views/LateBreak2201.vue')
     }
   },
   {
@@ -52,6 +52,20 @@ const routes = [
     name: 'BookingRule',
     component: function () {
       return import('../views/BookingRule.vue')
+    }
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: function () {
+      return import('../views/Privacy.vue')
+    }
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: function () {
+      return import('../views/Contact.vue')
     }
   }
 ]

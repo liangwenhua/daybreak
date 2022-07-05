@@ -1,5 +1,5 @@
 <template>
-  <h1>1301</h1>
+  <h1>幕宅山</h1>
 </template>
 
 <script>
