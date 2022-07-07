@@ -1,20 +1,19 @@
 
 <template >
-
   <component-nav />
   <router-view></router-view>
   <component-footer />
 </template>
 
 <script>
-import componentNav from "./components/Nav.vue";
-import componentFooter from "./components/Footer.vue";
+import componentNav from "@/components/Nav.vue";
+import componentFooter from "@/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     componentNav,
-    componentFooter,
+    componentFooter
   },
 };
 </script>

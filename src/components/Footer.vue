@@ -78,7 +78,7 @@ export default{
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 $SansTC: 'Noto Sans TC', sans-serif;
 $Serif: serif,'Noto Serif TC';
 

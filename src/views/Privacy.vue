@@ -129,7 +129,7 @@ $SansTC: 'Noto Sans TC', sans-serif;
 $Serif: serif,'Noto Serif TC';
 
 
-.privacy{
+.privacy {
   background: url('@/assets/images/bg-booking.jpg');
   background-size: cover;
   background-position: center;
