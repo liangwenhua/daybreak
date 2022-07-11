@@ -1,5 +1,6 @@
 <template>
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="wrap">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="@/assets/images/Room3.jpg" class="d-block w-100" alt="">
@@ -23,7 +24,7 @@
 
 <section class="container">
   <div class="d-flex justify-content-between">
-    <img class="" src="@/assets/images/latebreak-black.svg" alt="">
+    <img class="break-logo" src="@/assets/images/latebreak-black.svg" alt="">
     <div class="room-type ">
       1301
       <span class="room-name">雲湧</span>
@@ -33,6 +34,7 @@
     <div class="col-6">
       <div class="room-photo">
         <img class="w-100" src="@/assets/images/Room4.jpg" alt="">
+        
       </div>
     </div>
     <div class="col-6 p-5">
@@ -50,47 +52,18 @@
     </div>
   </div>
 
-  <div class="row room-equipment">
-    <div class="col-6">
-      <div class="h2">客房設備</div>
-      <span class="mx-5"> Room Equipment</span>
-      <div class="equipment-list">
-        <ul>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-      </ul>
-      <ul>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-      </ul>
-      <ul>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-        <li>xxxx</li>
-      </ul>
+  
+  <component-room-equipment/>
+  
+  
 
-      </div>
-      
-    </div>
-    <div class="col-6">
-      <img class="w-100" src="@/assets/images/Room2.jpg" alt="">
-    </div>
-  </div>
   <div class="h2">加購服務</div>
   <div class="row">
     <div class="col-6">
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3 bg-transparent border-0" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="@/assets/images/Room2.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="@/assets/images/Room2.jpg" class="img-fluid rounded-start my-3" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -103,10 +76,10 @@
       </div>
     </div>
     <div class="col-6">
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3 bg-transparent border-0" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="@/assets/images/Room3.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="@/assets/images/Room2.jpg" class="img-fluid rounded-start my-3" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
@@ -129,10 +102,28 @@
 
   
 </section>
+
+  </div>
+  
  
 </template>
 
 <script>
+
+import componentRoomEquipment from "@/components/RoomEquipment.vue";
+import roomData from "@/data/room.js"
+
+export default {
+  name: "DayBreak1301",
+  components: {
+    componentRoomEquipment
+  },
+  data() {
+    return {
+      inputData: roomData
+    }
+  },
+};
 
 </script>
 
@@ -142,14 +133,31 @@
 // }
 $SansTC: 'Noto Sans TC', sans-serif;
 $Serif: serif,'Noto Serif TC';
+.wrap {
+  background-color: #A8A8A8;
+  font-family: $Serif;
+}
+
+#carouselExampleControls {
+  .carousel-inner , .carousel-item{
+    height: 640px;
+  }
+ 
+}
+.break-logo {
+  height: 75px;
+  margin: 60px 0 30px;
+}
 
 .room-type {
   font-family: $Serif;
   font-size: 30px;
   margin-right: 30px;
+  margin-top: -70px;
+  z-index: 10;
   .room-name {
     font-size: 125px;
-    
+    letter-spacing: 14px;
     font-weight: bold;
   }
 }
@@ -161,10 +169,21 @@ $Serif: serif,'Noto Serif TC';
   }
 }
 .room-detal {
-  border-bottom: 1px solid #000
+  border-bottom: 1px solid #000;
+  letter-spacing: 3px;
+  & + p {
+    letter-spacing: 2px;
+    line-height: 2;
+  } 
 }
 .room-equipment {
   margin: 100px 50px;
+}
+
+.equipment-icon {
+  img {
+    height: 25px;
+  }
 }
 .equipment-list {
   margin-right: 0;

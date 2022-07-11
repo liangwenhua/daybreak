@@ -4,19 +4,19 @@
     <div class="row pb-5">
       <div class="col-12 text-start">
         <router-link to="/">
-          <img :src="image" alt="">
+          <img src="@/assets/images/small-logo.svg" alt="">
         </router-link> 
       </div>
     </div>
-    <div class="row">
+    <div class="row footer-list">
       <div class="col-5 text-start">
         <div class="pb-4">
           <h5>曉宅山</h5>
-          <a href="https://www.google.com/maps/place/No.+49,+Shuqi+Rd,+Ruifang+District,+New+Taipei+City,+224/data=!4m2!3m1!1s0x345d4517c3fc4c0d:0xe86927fee414b4be?sa=X&ved=2ahUKEwjd343lqc_4AhUrmlYBHYq9Bh4Q8gF6BAgNEAE" target="blank">新北市瑞芳區豎崎路49號</a>
+          <a href="https://www.google.com/maps/place/No.+49,+Shuqi+Rd,+Ruifang+District,+New+Taipei+City,+224/@25.1095499,121.8431719,17z/data=!3m1!4b1!4m5!3m4!1s0x345d4517c3fc4c0d:0xe86927fee414b4be!8m2!3d25.1095499!4d121.8431719" target="blank">新北市瑞芳區豎崎路49號</a>
         </div>
         <div>
           <h5>曉宅山</h5>
-          <a href="https://www.google.com/maps/place/No.+93,+Qiche+Rd,+Ruifang+District,+New+Taipei+City,+224/data=!4m2!3m1!1s0x345d4517c43e0851:0x10273a43aaf75f21?sa=X&ved=2ahUKEwiH9sD6qc_4AhVhp1YBHe5JCsIQ8gF6BAgLEAE" target="blank">新北市瑞芳區汽車路93號</a>
+          <a href="https://www.google.com/maps/place/224%E6%96%B0%E5%8C%97%E5%B8%82%E7%91%9E%E8%8A%B3%E5%8D%80%E6%B1%BD%E8%BB%8A%E8%B7%AF93%E8%99%9F/@25.10958,121.8408142,17z/data=!3m1!4b1!4m5!3m4!1s0x345d4517c43e0851:0x10273a43aaf75f21!8m2!3d25.10958!4d121.8430029" target="blank">新北市瑞芳區汽車路93號</a>
         </div>
       </div>
       <div class="col-5 text-start">
@@ -35,7 +35,7 @@
           <li>
             聯絡電話 +886(03)000-0000</li>
           <li>
-            <a href="#">service@daybreak.com</a>
+            <a href="mailto:service@daybreak.com">service@daybreak.com</a>
           </li>
         </ul>
       </div>
@@ -66,15 +66,7 @@
 
 <script>
 
-import image from "@/assets/images/small-logo.svg"
 
-export default{
-  data() {
-    return {
-      image: image
-    }
-  }
-}
 </script>
 
 
@@ -96,7 +88,7 @@ footer{
     padding-bottom: 15px;
     letter-spacing: 5px;
   }
-  a{
+  .footer-list a{
     // border: 1px solid rgb(255, 0, 0);
     padding: 7px 0;
     letter-spacing: 5px;

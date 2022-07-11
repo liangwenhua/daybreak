@@ -12,13 +12,17 @@
     <div class="container wrap">
       
       <div class="news-content">
-        <div class="fs-4 pb-2">四月訂房日期開放公告</div>
+        <div class="fs-4 pb-2"></div>
+        <div v-html="allArticle.template"></div>
+        {{allArticle}}
         <div class="pb-2">2021 / 3 / 20</div>
         <p>在開放第二階段至四月份的訂房後，不到兩週的時間內已全數客滿。為了服務向隅的朋友們，我們預計將於三月十二日中午12點起，開放五月到九月的線上訂房日期。在開房日期。在開放第二階段至四月份的訂房後，不到兩週的時間內已全數客滿。為了服務向隅的朋友們，我們預計將於三月十二日中午12點起，開放五月到九月的線上訂房日期。</p>
 
         <p>在開放第二階段至四月份的訂房後，不到兩週的時間內已全數客滿。為了服務向隅的朋友們，我們預計將於三月十二日中午12點起，開放五月到九月的線上訂房日期。在開放第二階段至四月份的訂房後，不到兩週的時間內已全數客滿。為了服務向隅的朋友們，我們預計將於三月十二日中午12點起，開放五月到九月的線上訂房日期。</p>
         <img class="w-100 my-5" src="@/assets/images/Room5.jpg" alt="">
         <p>在開放第二階段至四月份的訂房後，不到兩週的時間內已全數客滿。為了服務向隅的朋友們，我們預計將於三月十二日中午12點起，開放五月到九月的線上訂房日期。在開放第二階段至四月份的訂房後，不到兩週的時間內已全數客滿。為了服務向隅的朋友們，我們預計將於三月十二日中午12點起，開放五月到九月的線上訂房日期。</p>
+
+
       </div>
     </div>
   </section>
@@ -27,6 +31,35 @@
 
 
 <script>
+import data from "@/data/blog.js"
+export default {
+  props: ['obj'],
+  data() {
+    return {
+      inputData: data,
+      allArticle: {}
+    }
+  },
+  methods: {
+    findArticle() {
+      for (let i = 0; i < this.inputData.length; i++) {
+        console.log(this.inputData[i].id,this.$route.params.id)
+        if(this.inputData[i].id === parseInt(this.$route.params.id)){
+          this.allArticle = this.inputData[i]
+        }
+      }
+    }
+    
+  },
+  mounted(){
+    console.log(this.$route);
+    this.findArticle()
+
+  }
+}
+
+
+
 
 </script>
 
