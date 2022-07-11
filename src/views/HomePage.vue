@@ -158,9 +158,10 @@
     <div class="container">
       <div class="news-title">最新消息 News</div>
       <div class="news-group">
-        <component-news-list />
-        <component-news-list />
-        <component-news-list />
+        <component-news-list 
+          v-for="(item,index) in inputData" 
+          :key="index" 
+          :obj ="item" />
         <button type="button" class="btn btn-light m-5">查看更多</button>
       </div>
     </div>
@@ -169,11 +170,17 @@
 
 <script>
 import componentNewsList from "@/components/NewsList.vue";
+import data from "@/data/blog.js"
 
 export default {
-  name: "App",
+  name: "News",
   components: {
     componentNewsList
+  },
+  data() {
+    return {
+      inputData: data
+    }
   },
 };
 </script>

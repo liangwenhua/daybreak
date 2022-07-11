@@ -6,40 +6,59 @@
     一望無際的落日景緻，也為此趟旅行迎來獨有的魔幻時刻</p>
 
     <div class="row">
-      <div class="col-4">
-        <div class="d-flex justify-content-center">
-          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
+      <div class="col-12">
+        <div class="d-flex flex-row  justify-content-center">
+          <router-link  to="/room-daybreak/1301"      class="text-decoration-none" style="background-image: url('@/assets/images/Room4.jpg')">
+            <div class="latebreak-img">
+              <div class="img-overlay">
+                <p>暮色</p>
+              </div>
+            </div>
+          </router-link>
+          <router-link  to="/room-daybreak/1301"      class="text-decoration-none">
+            <div class="latebreak-img">
+              <div class="img-overlay">
+                <p>暮色</p>
+              </div>
+            </div>
+          </router-link>
+          <router-link  to="/room-daybreak/1301"      class="text-decoration-none">
+            <div class="latebreak-img">
+              <div class="img-overlay">
+                <p>暮色</p>
+              </div>
+            </div>
+          </router-link>
         </div>
       </div>
-      <div class="col-4">
-        <div class="d-flex justify-content-center">
-          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="d-flex justify-content-center">
-          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
+
+      <div class="col-12">
+        <div class="d-flex flex-row  justify-content-center">
+          <router-link  to="/room-daybreak/1301"      class="text-decoration-none">
+            <div class="latebreak-img">
+              <div class="img-overlay">
+                <p>暮色</p>
+              </div>
+            </div>
+          </router-link>
+          <router-link  to="/room-daybreak/1301"      class="text-decoration-none">
+            <div class="latebreak-img">
+              <div class="img-overlay">
+                <p>暮色</p>
+              </div>
+            </div>
+          </router-link>
+          <router-link  to="/room-daybreak/1301"      class="text-decoration-none">
+            <div class="latebreak-img">
+              <div class="img-overlay">
+                <p>暮色</p>
+              </div>
+            </div>
+          </router-link>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-4">
-        <div class="d-flex justify-content-center">
-          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="d-flex justify-content-center">
-          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="d-flex justify-content-center">
-          <router-link  to="/room-daybreak/1301" class="room-photo"></router-link>
-        </div>
-      </div>
-    </div>
 
    
   </div>
@@ -80,27 +99,32 @@ $Serif: serif,'Noto Serif TC';
       font-size: 16px;
       padding: 35px;
     }
-    .room-type{
-      background-color: rgba(0, 0, 0, 0.048);
-      padding: 15px;
-      // border: 1px solid rgb(255, 0, 0);
-    }
+  
     .title{
       font-size: 36px;
       font-family: $Serif;
       font-weight: bold;
     }
    
-    .room-photo{
-      background-image: url('@/assets/images/Room4.jpg');
+    .latebreak-img{
+      // background-image: url('@/assets/images/Room4.jpg');
+      // border: 1px solid #000;
       background-size: cover;
       background-position: center;
       width: 250px;
       height: 430px;
       margin: 15px;
-      &:hover{
-        opacity: 0.9;
+      .img-overlay{
+        background-color: rgb(0,0,0,.4);
       }
+      p {
+        color: white;
+        font-size: 30px;
+        font-family: $Serif;
+        line-height: 430px;
+        margin:auto
+      }
+      
     }
   }
   .explore{
